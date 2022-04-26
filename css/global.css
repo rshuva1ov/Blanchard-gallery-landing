@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/OpenSans-Semibold.woff2') format('woff2'), url('../fonts/OpenSans-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/OpenSans-Light.woff2') format('woff2'), url('../fonts/OpenSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #333333;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+}
+
+.container {
+  max-width: 1703px;
+  padding: 0 46px 0 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+*:focus-visible {
+  outline: 0;
+}
+
+.bg-focus:before {
+  content: "";
+  position: absolute;
+  top: -1.7px;
+  bottom: -1.7px;
+  left: -5px;
+  right: -5px;
+  background-color: #7943A4;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.outline-focus:before {
+  background-color: transparent;
+  border: 1px solid #7943A4;
+  border-radius: 30px;
+}
+
+.outline-focus {
+  background-color: #7943A4;
+  border: 1px solid #7943A4;
+  border-radius: 30px;
+  padding: 7px 15px;
+}
+
+.bg-focus:focus-visible:before,
+.outline-focus:focus-visible:before {
+  opacity: 1;
+}
+
+.btn__active:active {
+  background-color: #7943A4;
+}
+
+.btn__focus:before {
+  background-color: transparent;
+  border: 2px solid #C283F3;
+  border-radius: 100px;
+  opacity: 0;
+}
+
+.btn__focus::after {
+  background-color: transparent;
+  border: 2px solid #D1A9F0;
+  border-radius: 100px;
+  opacity: 0;
+}
+
+.btn__focus {
+  border: 2px solid #9D5CD0;
+  background-color: #9D5CD0;
+  border-radius: 100px;
+  padding: 7px 15px;
+}
+
+.btn__focus:before {
+  content: "";
+  position: absolute;
+  top: -7.7px;
+  bottom: -7.7px;
+  left: -7px;
+  right: -7px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.btn__focus:focus-visible:before {
+  opacity: 1;
+}
+
+.btn__focus::after {
+  content: "";
+  position: absolute;
+  top: -1.7px;
+  bottom: -1.7px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.btn__focus::after {
+  background-color: transparent;
+  border: 2px solid #D1A9F0;
+  border-radius: 100px;
+}
+
+.prev__rotate {
+  transform: rotate(180deg);
+}
+
+.icons__eff {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: all .3s ease;
+}
+
+.links-focus:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background-color: #9D5CD0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.links-focus:focus-visible:before {
+  opacity: 1;
+}
+
+.logo:focus-visible {
+  outline: 1px solid #7943A4;
+}
+
+.touch__swiper-link {
+  color: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+  background: #666666;
+}
+
+/*  MEDIA  */
+
+@media (min-width: 1200px) {
+
+  /*  HOVERS */
+  .bg-focus:hover:not(:focus-visible) {
+    color: #C283F3;
+  }
+
+  .bg-focus:active:not(:focus-visible) {
+    color: #7943A4;
+  }
+
+  .outline-focus:hover:not(:focus-visible) {
+    background-color: transparent;
+    border: 1px solid #C283F3;
+  }
+
+  .btn__focus:hover::after {
+    opacity: 1;
+  }
+
+  .links-focus:hover {
+    color: #7943A4;
+    border-bottom-color: #7943A4;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  /* хром, сафари */
+  .body::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* ie 10+ */
+  .body {
+    -ms-overflow-style: none;
+  }
+
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  .body {
+    overflow: -moz-scrollbars-none;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /* html {
+    overflow: hidden;
+  } */
+}

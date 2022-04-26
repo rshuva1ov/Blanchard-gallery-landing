@@ -1,0 +1,372 @@
+  /* CONTACTS */
+
+  .contacts {
+    border-top: 1px solid #E5E5E5;
+    margin-bottom: 33px;
+  }
+
+  .contacts-content {
+    display: flex;
+    margin-top: 34px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .contacts__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts-content__heading {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #333333;
+  }
+
+  .contacts-content__text {
+    color: #333333;
+  }
+
+  .contacts-content__connect {
+    transform: translate(-6px, 5px);
+    margin-left: 5px;
+  }
+
+  .connect-text {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 6px;
+  }
+
+  .connect-telegram {
+    margin-left: 17px;
+  }
+
+  .form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-input {
+    width: 270px;
+    height: 49px;
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 100px;
+    padding: 0 0 0 24px;
+    margin-right: 20px;
+    transition: all .3s ease;
+  }
+
+  .form-input:focus-visible {
+    background-color: #EAEAEA;
+  }
+
+  .contacts-form__btn {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    max-height: 50px;
+    text-align: center;
+    color: #9D5CD0;
+    background-color: #fff;
+    position: relative;
+    transition: all .3s ease;
+  }
+
+  .contacts-form__btntext1 {
+    display: inline-block;
+  }
+
+  .contacts-form__btntext2 {
+    display: none;
+  }
+
+  .contacts-form__btn:active {
+    border: 2px solid #D1A9F0;
+  }
+
+  .contacts-form__btn:before {
+    background-color: transparent;
+    border: 2px solid #C283F3;
+    border-radius: 100px;
+    opacity: 0;
+  }
+
+  .contacts-form__btn::after {
+    background-color: transparent;
+    border: 2px solid #D1A9F0;
+    border-radius: 100px;
+    opacity: 0;
+  }
+
+  .contacts-form__btn {
+    border: 2px solid #9D5CD0;
+    border-radius: 100px;
+    padding: 7px 34px;
+  }
+
+  .contacts-form__btn:before {
+    content: "";
+    position: absolute;
+    top: -7.7px;
+    bottom: -7.7px;
+    left: -7px;
+    right: -7px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+  }
+
+  .contacts-form__btn:focus-visible:before {
+    opacity: 1;
+  }
+
+  .contacts-form__btn::after {
+    content: "";
+    position: absolute;
+    top: -1.7px;
+    bottom: -1.7px;
+    left: -2px;
+    right: -2px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+  }
+
+  .contacts-form__btn::after {
+    background-color: transparent;
+    border: 2px solid #D1A9F0;
+    border-radius: 100px;
+  }
+
+  .contacts__form-group {
+    position: relative;
+  }
+
+  .contacts__form-group .js-validate-error-label {
+    position: absolute;
+    top: -22px;
+    left: 22px;
+    color: #d11616 !important;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .connect-link {
+    transition: opacity .3s ease;
+  }
+
+  .connect-link:focus-visible {
+    opacity: .5;
+  }
+
+  .connect-link:active {
+    opacity: 1;
+  }
+
+  .connect-link:active .connect-whatsup {
+    opacity: 1;
+    border: 1px solid #9643A4;
+    border-radius: 50%;
+  }
+
+  .connect-link:active .connect-telegram {
+    opacity: 1;
+    border: 1px solid #9643A4;
+    border-radius: 50%;
+  }
+
+  @media (min-width: 1200px) {
+
+    /* CONTACTS */
+    .contacts-form__btn:hover {
+      background-color: #9D5CD0;
+      color: #fff;
+    }
+
+    .form-input:hover {
+      background-color: #EAEAEA;
+    }
+
+    .connect-link:hover {
+      opacity: .5;
+    }
+  }
+
+  @media (max-width: 1540px) {
+    .contacts-content__connect {
+      margin-top: 26px;
+    }
+  }
+
+  @media (max-width: 1260px) {
+
+    /* CONTACTS */
+    .contacts {
+      margin-bottom: 38px;
+    }
+
+    .contacts-content {
+      margin-top: 42px;
+    }
+
+    .contacts__form-group {
+      margin-top: 31px;
+    }
+
+    .contacts-form__btn {
+      margin-top: 31px;
+    }
+
+    .contacts-form__btn {
+      padding: 7px 41px;
+    }
+
+    .contacts__form-group .js-validate-error-label {
+      top: -20px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+
+    /* CONTACTS */
+    .contacts-form__name {
+      width: 324px;
+      margin-right: 20px;
+    }
+
+    .contacts-form__phone {
+      width: 324px;
+      margin-right: 0;
+    }
+
+    .contacts-form__btn {
+      padding: 11px 28px;
+      margin-top: 14px;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    /* CONTACTS */
+    .contacts {
+      border: none;
+      margin-bottom: 15px;
+    }
+
+    .contacts-form__btntext1 {
+      display: none;
+    }
+
+    .contacts-form__btntext2 {
+      display: inline-block;
+    }
+
+    .contacts-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contacts-content {
+      margin-top: 0;
+    }
+
+    .contacts-content__heading {
+      font-size: 18px;
+      line-height: 15px;
+    }
+
+    .contacts-content__text {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    .form-input {
+      height: 40px;
+      width: 290px;
+    }
+
+    .contacts__form-group {
+      margin-top: 0;
+    }
+
+    .contacts__form-group .js-validate-error-label {
+      top: -11px;
+    }
+
+    .contacts__form-group2 .js-validate-error-label {
+      top: 2px;
+    }
+
+    .contacts-form__name {
+      margin-top: 8px;
+      margin-right: 0;
+    }
+
+    .contacts-form__phone {
+      margin-top: 21px;
+    }
+
+    .contacts-form__btn {
+      max-width: 129px;
+      width: 100%;
+      padding: 11px 13px;
+      margin-top: 18px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .contacts-content__connect {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .connect-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    .connect-whatsup {
+      width: 50px;
+      height: 50px;
+    }
+
+    .connect-telegram {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .contacts-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .form {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .contacts-content__connect {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }

@@ -1,0 +1,95 @@
+ /* YANDEX */
+ /* MAP */
+
+ .map {
+   margin-bottom: 5px;
+ }
+
+ .map-size {
+   max-width: 8000px;
+   width: 100%;
+   height: 700px;
+ }
+
+ [class*="ground-pane"] {
+   filter: grayscale(1);
+ }
+
+ .ymaps-2-1-79-map-copyrights-promo {
+   display: none;
+ }
+
+ .ymaps-2-1-79-float-button {
+   border-width: 7px;
+   border-radius: 0;
+   height: 32px;
+   box-shadow: 0 1px 1px 1px rgb(0 0 0 / 10%), 0 4px -1px 0 rgb(0 0 0 / 10%);
+ }
+
+ .ymaps-2-1-79-_hidden-text {
+   border-radius: 5px;
+   height: 38px;
+ }
+
+ .ymaps-2-1-79-zoom {
+   padding: 37px 0;
+   width: 31px;
+ }
+
+ .ymaps-2-1-79-copyright__layout {
+   top: 2px;
+ }
+
+ .ymaps-2-1-79-copyright__link:focus-visible {
+   outline: 1px solid #7943A4;
+ }
+
+ @media (max-width: 1025px) {
+
+   /* YANDEX */
+   .ymaps-2-1-79-zoom {
+     display: none;
+   }
+
+   .ymaps-2-1-79-float-button {
+     display: none;
+   }
+ }
+
+ .ymaps-2-1-79-zoom__plus {
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   height: 47px;
+ }
+
+ .ymaps-2-1-79-zoom__minus {
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   height: 38px;
+ }
+
+ .ymaps-2-1-79-zoom__plus .ymaps-2-1-79-zoom__icon {
+   background-image: url('../img/plus-sign.png');
+   background-size: 84%;
+ }
+
+ .ymaps-2-1-79-zoom__minus .ymaps-2-1-79-zoom__icon {
+   background-image: url('../img/minus.png');
+   background-size: 78%;
+ }
+
+ @media (max-width: 767px) {
+
+   /* YANDEX */
+   .map-size {
+     height: 520px;
+   }
+ }
+
+ @media (max-width: 525px) {
+
+   /* YANDEX */
+   .map-size {
+     height: 320px;
+   }
+ }
