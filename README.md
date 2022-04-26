@@ -1,1 +1,2 @@
-https://rshuva1ov.github.io/blanchard-gallery/
+# Художественная галлерея Blanchard
+№№№№№№ Приветствую, представляю вашему вниманию мою первую крупную верстку сайта, ознакомиться можно по [сслыке](https://rshuva1ov.github.io/blanchard-gallery/)
